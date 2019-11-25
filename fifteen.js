@@ -17,7 +17,7 @@ var shuffled = elements.slice();
 /*Once shuffled, it's difficult to figure out which 
 number is a digit*/
 var elementsNum = {"one":1, "two":2, "three":3, "four":4,
-                "five":5, "six":6, "seven":8, "eight":8,
+                "five":5, "six":6, "seven":7, "eight":8,
                 "nine":9, "ten":10, "eleven":11, "twelve":12,
          "thirteen":13, "fourteen":14, "fifteen":15, "sixteen":16};
 
@@ -95,7 +95,7 @@ function switchBackground() {
         else {
             var elements_name = elements[i];
             document.getElementById("main").innerHTML += '<div id="' + elements[i] + '" class="tile' + 
-            " " + currentbackground + '">' + elementsNum[idName] + '</div>';
+            " " + currentbackground + '">' + elementsNum[elements_name] + '</div>';
         }
     }
 }
