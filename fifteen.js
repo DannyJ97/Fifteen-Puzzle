@@ -271,7 +271,7 @@ function checkIfWon() {
         var seconds    = Math.round(elapsedMS / 1000);
 
         var html = "";
-        html += "<img src='win.gif' alt='You win' />";
+        html += "<img src='images/win.gif' alt='You win' />";
         html += "<p>Total time it took you to solve this puzzle (in seconds): " + seconds + "</p>";
         html += "<p>Total number of moves it took you to solve this puzzle: " + moves + "</p>";
 

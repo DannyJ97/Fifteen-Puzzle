@@ -1,18 +1,69 @@
-html, body {
-    height: 100%;
-    background-color: black;
-    color: blanchedalmond;
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+html{
+    margin: 0;
+    padding: 0;
+} 
+
+body{
+    background-color: #e8d151;
+}
+
+#logo{
+    margin-top: 20px;
+    background:url("images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 300px;
+    margin: auto auto;
+    margin-bottom: 40px;
+    
+}
+
+button{
+    font-family: 'Varela Round', sans-serif;
+    background: #e8d151;
+    font-weight: bold;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+option{
+    background: #e8d151;
+}
+
+p{
+    clear: both;
+    color: black;
+    background: rgb(255,255,255, 0.3);
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
 
 #wrapper {
-    margin: 5% auto;
-    width: 600px;
-
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    margin: auto auto;
+    margin-bottom: 0;
+    padding: 35px 70px 70px 70px;
+    width: 700px;
+    background: url("images/tunnel.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #main {
@@ -20,6 +71,7 @@ html, body {
     width:400px;
     height:400px;
     position: relative;
+    top: 
 }
 
 .tile {
@@ -27,12 +79,12 @@ html, body {
     height:96px;
     float: left;
     text-align: center;
-    border: 2px rgb(0, 0, 0) solid;
+    border: 2px black solid;
     vertical-align: middle;
     font-size: 32px;
-    font-family: sans-serif;
     line-height: 100px;
-    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+    font-family: 'Varela Round', sans-serif;
+    text-shadow: 1px 1px 2px black, 0 0 5px white;
 }
 
 h1 {
@@ -55,10 +107,19 @@ a {
     border:0;
 }
 
-.super-mario { background: url("super-mario.jpg"); }
-.luigi       { background: url("luigi.jpg");       }
-.bowser      { background: url("bowser.jpg");      }
-.toad        { background: url("toad.jpg");        }
+.valid{
+    float: none;
+}
+
+footer{
+   text-align: center;
+    margin-top: 50px;
+}
+
+.super-mario { background: url("images/super-mario.jpg"); }
+.luigi       { background: url("images/luigi.jpg");       }
+.bowser      { background: url("images/bowser.jpg");      }
+.toad        { background: url("images/toad.jpg");        }
 
 #one      { background-position: 0      0;      }
 #two      { background-position: -100px 0;      }
@@ -78,11 +139,11 @@ a {
 #sixteen  { border: 2px solid white !important; }
 
 .clickable {
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
 .clickable:hover {
