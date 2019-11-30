@@ -46,14 +46,18 @@
             <div id="fifteen"  class="tile">15</div>
             <div id="sixteen"  class="tile"></div>
         </div>
-
-    <button onclick="shuffleGame()">Shuffle</button>
+    <!--Theme song audio-->
+    <audio id="theme"><source src="audio/theme.mp3" type="audio/mp3"></audio>
+    
+    <h1 id="timer"> Time: <span id="time-display">00:00:00</span></h1>
+    <button id="start" onclick="shuffleGame();startTimer();playTheme();">Shuffle</button>
 
     <p>
         American puzzle author and mathematician Sam Loyd is often falsely credited with creating the puzzle; indeed,
         Loyd claimed from 1891 until his death in 1911 that he invented it. The puzzle was actually created around 1874
         by Noyes Palmer Chapman, a postmaster in Canastota, New york.
     </p>
+        
     <footer>
         <a href="http://www.jslint.com/" target="_blank"><img class="valid" src="images/jslint.gif" alt="JSLint"/> </a>
         <a href="https://jigsaw.w3.org/css-validator/" target="_blank"><img class="valid" src="images/w3c-css.png" alt="W3C CSS" /> </a>

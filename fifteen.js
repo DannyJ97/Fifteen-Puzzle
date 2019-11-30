@@ -269,12 +269,83 @@ function checkIfWon() {
         var end        = new Date();
         var elapsedMS = end - start;
         var seconds    = Math.round(elapsedMS / 1000);
+        
+        var html = "You win!"
 
-        var html = "";
+ /*       var html = "";
         html += "<img src='images/win.gif' alt='You win' />";
         html += "<p>Total time it took you to solve this puzzle (in seconds): " + seconds + "</p>";
         html += "<p>Total number of moves it took you to solve this puzzle: " + moves + "</p>";
-
+*/
         document.getElementById("win").innerHTML = html;
     }
 }
+
+/*Displaying a timer to allow users to see how long they are currently taking while playing the game*/
+
+function startTimer(){
+    let secs = 0;
+    let min = 0;
+    let hr = 0;
+    
+    /*display values*/
+    let secs1 = 0;
+    let min1 = 0;
+    let hr1 = 0;
+    
+    
+    function swatch(){
+        secs++;
+        
+        /*logic that determines when to inc sec, min, hour*/
+        
+        if(secs>=60){
+            secs = 0;
+            min++;
+        }
+        
+        if(min>=60){
+            min = 0;
+            hr++;
+        }
+        
+        /*dealing with leading zeros*/
+        if(secs < 10){
+            secs1 = "0" + secs.toString();
+        }
+        else{
+            secs1 = secs;
+        }
+        
+        
+        if(min < 10){
+            min1 = "0" + min.toString();
+        }
+        else{
+            min1 = min;
+        }
+        
+        
+        if(hr < 10){
+            hr1 = "0" + hr.toString();
+        }
+        else{
+            hr1 = hr;
+        }
+        
+        /*updated time value display*/ document.getElementById("time-display").innerHTML = hr1 + ":" + min1 + ":" + secs1;
+    }
+    
+       
+        window.setInterval(swatch, 1000);
+}
+
+
+/*playing mario theme song*/
+function playTheme(){
+    var theme = document.getElementById('theme');
+    
+    theme.play();
+}
+
+
