@@ -269,14 +269,12 @@ function checkIfWon() {
         var end        = new Date();
         var elapsedMS = end - start;
         var seconds    = Math.round(elapsedMS / 1000);
-        
-        var html = "You win!"
 
- /*       var html = "";
+        var html = "";
         html += "<img src='images/win.gif' alt='You win' />";
         html += "<p>Total time it took you to solve this puzzle (in seconds): " + seconds + "</p>";
         html += "<p>Total number of moves it took you to solve this puzzle: " + moves + "</p>";
-*/
+
         document.getElementById("win").innerHTML = html;
     }
 }
