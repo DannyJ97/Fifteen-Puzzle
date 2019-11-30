@@ -3,7 +3,9 @@ Project Name: Mario 15 Puzzle
 The team created a Super Mario themed version of the 15 puzzle that included multiple backgrounds, animation, time displayed and end of game notification.
 Members & Roles: 
   Daniel Green- worked on back-end logic of the puzzle game, testing, and some styling of the puzzle, presentation.
-  T'avvion Jones- worked on back-end logic of the puzzle game, testing, and some styling of the puzzle, presentation.
+  
+  T'Avvion Jones- (Total Time: 2hrs) worked on back-end logic of the puzzle game to allow player to pick the board that they would like to play, testing, some styling of the board, and presentation.
+  
   Mimi Do- worked on front-end css styling, testing, back-end logic of timer and audio, presentation, and created some graphics for the interface. 
   
   Test Cases:
