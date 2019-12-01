@@ -7,6 +7,10 @@ body{
     background-color: #e8d151;
 }
 
+#info-links{
+    display: block;
+}
+
 #logo{
     margin-top: 20px;
     background:url("images/logo.png");

@@ -1,12 +1,15 @@
 Leader: 
 Project Name: Mario 15 Puzzle
 The team created a Super Mario themed version of the 15 puzzle that included multiple backgrounds, animation, time displayed and end of game notification.
+
+
 Members & Roles: 
-  Daniel Green- worked on back-end logic of the puzzle game, testing, and some styling of the puzzle, presentation.
+  
+Daniel Green- (Total Time: ) worked on back-end logic of the puzzle game, testing, and some styling of the puzzle, presentation.
   
   T'Avvion Jones- (Total Time: 2hrs) worked on back-end logic of the puzzle game to allow player to pick the board that they would like to play, testing, some styling of the board, and presentation.
   
-  Mimi Do- worked on front-end css styling, testing, back-end logic of timer and audio, presentation, and created some graphics for the interface. 
+ Mimi Do- (Total Time: 3.5hrs) worked on front-end css styling, testing, back-end logic of timer and audio, presentation, and created some graphics for the interface; organization of files.  
   
   Test Cases:
   1. Check that puzzle randomly shuffles when shuffle button is clicked.
